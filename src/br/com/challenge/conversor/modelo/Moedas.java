@@ -1,8 +1,8 @@
-package conversor;
+package br.com.challenge.conversor.modelo;
 
 public enum Moedas {
 	
-//	Cotação do dia 11/12/2022
+	// Cotação do dia 11/12/2022
 	DOLAR(5.2409),
 	EURO(5.5218),
 	LIBRAS(6.4264),

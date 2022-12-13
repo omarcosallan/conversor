@@ -1,4 +1,4 @@
-package conversor;
+package br.com.challenge.conversor.modelo;
 
 import javax.swing.JOptionPane;
 

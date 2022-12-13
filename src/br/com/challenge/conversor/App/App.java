@@ -1,11 +1,13 @@
-package conversor;
+package br.com.challenge.conversor.App;
 
 import javax.swing.JOptionPane;
+
+import br.com.challenge.conversor.util.Conversao;
 
 public class App {
 
 	public static void main(String[] args) {
-		
+
 		boolean continuar;
 
 		do {
@@ -26,11 +28,21 @@ public class App {
 			if (checaValorDigitado(valor)) {
 				switch (tipoDoConversor) {
 				case "Conversor de Moeda": {
-					Conversao.converteMoedas(Double.parseDouble(valor));
+					try {
+						Conversao.converteMoedas(Double.parseDouble(valor));
+					} catch (NullPointerException e) {
+						JOptionPane.showMessageDialog(null, "Você deve selecionar um dos tipos de conversão.");
+						e.printStackTrace();
+					}
 					break;
 				}
 				case "Conversor de Temperatura": {
-					// Conversor.converteTemperatura(Double.parseDouble(valor));
+					try {						
+						Conversao.converteTemperaturas(Double.parseDouble(valor));
+					} catch (NullPointerException e) {
+						JOptionPane.showMessageDialog(null, "Você deve selecionar um dos tipos de conversão.");
+						e.printStackTrace();
+					}
 					break;
 				}
 				}
