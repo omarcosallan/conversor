@@ -1,4 +1,4 @@
-<h1 align="center"> Challenge Front-end Portfólio </h1>
+<h1 align="center"> Challenge Java </h1>
 
 <p align="center">
   <strong>Challenge Java, promovido pela Alura + ONE.
@@ -8,9 +8,9 @@
 
 <p align="center">
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-badge">Badge</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-badge">Badge</a>
+  <a href="#memo-licença">Licença</a>
 </p>
 
 <br>
