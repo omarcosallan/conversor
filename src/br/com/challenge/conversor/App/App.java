@@ -1,4 +1,4 @@
-package br.com.challenge.conversor.App;
+package br.com.challenge.conversor.app;
 
 import javax.swing.JOptionPane;
 

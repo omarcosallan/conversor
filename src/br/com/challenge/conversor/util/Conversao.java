@@ -5,11 +5,22 @@ import javax.swing.JOptionPane;
 import br.com.challenge.conversor.modelo.ConversorMoedas;
 import br.com.challenge.conversor.modelo.ConversorTemperaturas;
 
+/**
+ * Classe utilitária responsável por controlar a conversão (Moedas/Temperatura)
+ * 
+ * @author Marcos Allan
+ *
+ */
 public class Conversao {
 
 	private static ConversorMoedas conversorMoedas = new ConversorMoedas();
 	private static ConversorTemperaturas conversorTemperaturas = new ConversorTemperaturas();
 
+	/**
+	 * Converte moedas de acordo com a opção selecionada pelo usuário
+	 * 
+	 * @param valor Quantidade em dinheiro a ser convertida
+	 */
 	public static void converteMoedas(double valor) {
 		String opcoes = JOptionPane.showInputDialog(null, "Escolha a moeda para a qual deseja converter seu dinheiro: ",
 				"Menu", JOptionPane.PLAIN_MESSAGE, null,
@@ -62,6 +73,11 @@ public class Conversao {
 		}
 	}
 
+	/**
+	 * Converte temperaturas de acordo com a opção selecionada pelo usuário
+	 * 
+	 * @param valor Temperatura a ser convertida
+	 */
 	public static void converteTemperaturas(double valor) {
 		String opcoes = JOptionPane
 				.showInputDialog(null, "Escolha a temperatura para a qual deseja converter: ", "Menu",

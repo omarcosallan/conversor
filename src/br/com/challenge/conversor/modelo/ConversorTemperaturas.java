@@ -2,6 +2,12 @@ package br.com.challenge.conversor.modelo;
 
 import javax.swing.JOptionPane;
 
+/**
+ * Conversor de Temperaturas
+ * 
+ * @author Marcos Allan
+ *
+ */
 public class ConversorTemperaturas {
 
 	public void converteFahrenheitACelsius(double f) {

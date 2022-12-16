@@ -1,5 +1,11 @@
 package br.com.challenge.conversor.modelo;
 
+/**
+ * Constantes para armazenar e retornar cotação das moedas
+ * 
+ * @author Marcos Allan
+ *
+ */
 public enum Moedas {
 	
 	// Cotação do dia 11/12/2022
@@ -7,7 +13,7 @@ public enum Moedas {
 	EURO(5.5218),
 	LIBRAS(6.4264),
 	IENES(0.03838),
-	WON_COREANO(0.0040);
+	WON_COREANO(0.0040),;
 	
 	private double valor;
 	

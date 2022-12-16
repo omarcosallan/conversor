@@ -2,6 +2,12 @@ package br.com.challenge.conversor.modelo;
 
 import javax.swing.JOptionPane;
 
+/**
+ * Conversor de Moedas
+ * 
+ * @author Marcos
+ *
+ */
 public class ConversorMoedas {
 	
 	public void converteReaisADolar(double valor) {
