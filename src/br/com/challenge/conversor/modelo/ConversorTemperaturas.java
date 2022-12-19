@@ -10,35 +10,65 @@ import javax.swing.JOptionPane;
  */
 public class ConversorTemperaturas {
 
+	/**
+	 * Recebe um valor em Fahrenheit e converte para Celsius
+	 * 
+	 * @param f Graus Fahrenheit para conversão
+	 */
 	public void converteFahrenheitACelsius(double f) {
 		double temperaturaCelsius = Math.round(((f - 32) * 5 / 9) * 100.0) / 100.0;
 		JOptionPane.showMessageDialog(null, f + " Grau Fahrenheit é igual a " + temperaturaCelsius + " Grau Celsius.");
 	}
 
+	/**
+	 * Recebe um valor em Fahrenheit e converte para Kelvin
+	 * 
+	 * @param f Graus Fahrenheit para conversão
+	 */
 	public void converteFahrenheitAKelvin(double f) {
 		double temperaturaKelvin = Math.round(((f - 32) * 5 / 9 + 273.15) * 100.0) / 100.0;
 		JOptionPane.showMessageDialog(null, f + " Grau Fahrenheit é igual a " + temperaturaKelvin + " Grau Kelvin.");
 	}
 
-	public void converteCelsiusAFahrenheit(double f) {
-		double temperaturaFahrenheit = Math.round(((f * 9 / 5) + 32) * 100.0) / 100.0;
+	/**
+	 * Recebe um valor em Celsius e converte para Fahrenheit
+	 * 
+	 * @param c Graus Celsius para conversão
+	 */
+	public void converteCelsiusAFahrenheit(double c) {
+		double temperaturaFahrenheit = Math.round(((c * 9 / 5) + 32) * 100.0) / 100.0;
 		JOptionPane.showMessageDialog(null,
-				f + " Grau Celsius é igual a " + temperaturaFahrenheit + " Grau Fahrenheit.");
+				c + " Grau Celsius é igual a " + temperaturaFahrenheit + " Grau Fahrenheit.");
 	}
 
-	public void converteCelsiusAKelvin(double f) {
-		double temperaturaKelvin = Math.round((f + 273.15) * 100.0) / 100.0;
-		JOptionPane.showMessageDialog(null, f + " Grau Celsius é igual a " + temperaturaKelvin + " Grau Kelvin.");
+	/**
+	 * Recebe um valor em Celsius e converte para Kelvin
+	 * 
+	 * @param c Graus Celsius para conversão
+	 */
+	public void converteCelsiusAKelvin(double c) {
+		double temperaturaKelvin = Math.round((c + 273.15) * 100.0) / 100.0;
+		JOptionPane.showMessageDialog(null, c + " Grau Celsius é igual a " + temperaturaKelvin + " Grau Kelvin.");
 	}
 
-	public void converteKelvinACelsius(double f) {
-		double temperaturaCelsius = Math.round((f - 273.15) * 100.0) / 100.0;
-		JOptionPane.showMessageDialog(null, f + " Grau Kelvin é igual a " + temperaturaCelsius + " Grau Celsius.");
+	/**
+	 * Recebe um valor em Kelvin e converte para Celsius
+	 * 
+	 * @param k Graus Kelvin para conversão
+	 */
+	public void converteKelvinACelsius(double k) {
+		double temperaturaCelsius = Math.round((k - 273.15) * 100.0) / 100.0;
+		JOptionPane.showMessageDialog(null, k + " Grau Kelvin é igual a " + temperaturaCelsius + " Grau Celsius.");
 	}
 
-	public void converteKelvinAFahrenheit(double f) {
-		double temperaturaFahrenheit = Math.round(((f - 273.15) * 9 / 5 + 32) * 100.0) / 100.0;
+	/**
+	 * Recebe um valor em Kelvin e converte para Fahrenheit
+	 * 
+	 * @param k Graus Kelvin para conversão
+	 */
+	public void converteKelvinAFahrenheit(double k) {
+		double temperaturaFahrenheit = Math.round(((k - 273.15) * 9 / 5 + 32) * 100.0) / 100.0;
 		JOptionPane.showMessageDialog(null,
-				f + " Grau Kelvin é igual a " + temperaturaFahrenheit + " Grau Fahrenheit.");
+				k + " Grau Kelvin é igual a " + temperaturaFahrenheit + " Grau Fahrenheit.");
 	}
 }
